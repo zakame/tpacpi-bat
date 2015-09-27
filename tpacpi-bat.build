@@ -1,0 +1,20 @@
+#!/bin/sh
+
+PACKAGE=tpacpi-bat
+ORIGPATH=$PWD
+
+cd $SLACKTRACKSCRATCHDIR
+cp -r $ORIGPATH/* .
+
+VERSION=3.0
+chown -R root:root .
+chmod -R og-w .
+
+install -m 0755 tpacpi-bat /usr/sbin
+
+mkdir -vpm755 /usr/doc/${PACKAGE}-${VERSION}
+cp -favv README.md /usr/doc/${PACKAGE}-${VERSION}
+
+rm -fr /install
+mkdir -vpm755 /install
+cat ${ORIGPATH}/slack-desc > /install/slack-desc

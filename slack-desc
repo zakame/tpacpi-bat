@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+          |-----handy-ruler------------------------------------------------------|
+tpacpi-bat: tpacpi-bat (ThinkPad ACPI Battery Util)
+tpacpi-bat:
+tpacpi-bat: Exposes ACPI interface for battery controls.
+tpacpi-bat: -force discharge
+tpacpi-bat: -inhibit charge
+tpacpi-bat: -start charge threshold
+tpacpi-bat: -stop charge threshold
+tpacpi-bat:
+tpacpi-bat: Homepage: https://github.com/teleshoes/tpacpi-bat
+tpacpi-bat:
+tpacpi-bat:
